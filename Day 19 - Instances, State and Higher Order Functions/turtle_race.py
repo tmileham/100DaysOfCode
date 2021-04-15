@@ -34,8 +34,8 @@ def create_turtle_object(list: list):
 create_turtle_object(race_entrants)
 
 
-# Display text input on screen and record user input into variable bet
 def place_bet():
+    """Display text input on screen and return input as str"""
     return screen.textinput(
         "Place your bets!",
         "Who will win the race?\nThe racers in order are \n{0}".format(
