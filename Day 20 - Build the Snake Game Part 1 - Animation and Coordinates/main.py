@@ -11,8 +11,11 @@ screen.tracer(0)
 
 snake = Snake()
 
-screen.onkeypress(key="a", fun=snake.turn_left)
-screen.onkeypress(key="d", fun=snake.turn_right)
+screen.onkeypress(key="Up", fun=snake.up)
+screen.onkeypress(key="Right", fun=snake.right)
+screen.onkeypress(key="Down", fun=snake.down)
+screen.onkeypress(key="Left", fun=snake.left)
+
 
 screen.update()
 game_running = True
